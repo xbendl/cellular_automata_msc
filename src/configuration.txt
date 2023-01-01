@@ -1,0 +1,118 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; "Instruction-based Cellular automata" - configuration file
+
+[Task parameters]
+; Task type (MAJORITY / SYNCHRONIZATION / SELF_ORGANIZATION / COMPUTATION_ADDER)
+Task = MAJORITY
+
+; Task file (required only for SELF_ORGANIZATION)
+TaskFile = example_tasks/selforg_french_flag.txt
+
+; Type of boundary condition used for next state computation (0 = FIXED / 1 = CYCLIC)
+BoundaryType = 1
+
+; Size of grid in training grids.
+GridSize = 15
+
+; Number of training grids.
+TrainSetSize = 50
+
+[Evolution parameters]
+; Number of adjoining cells (0 = Von Neumann neighbourhood, 1 = Moore neighbourhood).
+Neighbourhood = 1
+
+; Using the algorithm of cellular programming (0 = disabled, 1 = enabled).
+CellularProgramming = 0
+
+; Number of simultaneously developed trees.
+PopulationSize = 50
+
+; Number of generations.
+GenerationCount = 5000
+
+; Number of individuals for tournament selection.
+TournamentSize = 2
+
+; Number of evolution steps, after which actual statistic will be written.
+LogInterval = 1
+
+; Number of automaton steps during evolution step.
+AutomatonStep = 16
+
+; Number of instructions in one chromosome (minimum must be greater then 2).
+InstructionCount = 10
+
+; Number of instruction set in the automaton's grid.
+InstructionSetCount = 2
+
+; Improvement of computation of cell's next state (0 = disabled, 1 = enabled).
+RotationInstruction = 1
+
+; Probability of placing NOP (no-operation) instruction instead of regular instruction into chromosome.
+NopProbability = 0.0
+
+; Number of individuals with best fitness who are automatically moved to next generation.
+ElitismSize = 1
+
+; Probability of tree mutation
+MutationProbability = 0.3
+
+; Time interval for adding new value to evolution graph at evolution instructions (in ms).
+TimeIntervalEvolutionInstructions = 250
+
+; Time interval between two evolution steps during analyse instructions.
+TimeIntervalAnalyseInstructions = 0.02
+
+; Number of values on graph at evolution instructions.
+EvolutionGraphValuesCount = 100
+
+; Number of damaged configurations for training self-repairing.
+DamagedConfigurationsCount = 10
+
+; Percentage limit (in decimals) express maximal damage of grid.
+MaxDamagedPercentage = 0.4
+
+; Number of ruleset for automaton (quasi-uniform variant)
+RulesetCount = 2
+
+[Improvements]
+; Method of application instructions (0 = all suitable, 1 = first suitable).
+InstructionApplication = 1
+
+; Cellular programming: New instruction for certain cell isn't calculate from neighbours if his fitness is better than fitness achieved in the previous step (0 = disabled, 1 = enabled).
+RespectFitnessImprovement = 1
+
+; Cellular programming: Number of steps after simulation start in which cell's instruction sets can't be restarted (-1 = disabled)
+InitialPhaseStep = 20
+
+; Cellular programming: Number of consecutive steps in which cell's fitness must be on maximal value for lock cell's instruction (-1 = disabled)
+LockStepCount = 15
+
+; Cellular programming: Percentage limit (in decimals) express number of cells which must have final value to precede reset all instructions (-1 = disabled)
+ResetGridPercentageLimit = 0.15
+
+; Cellular programming: Sequence length used for calculate instructions fruitfullness (-1 = disabled)
+FitnessMeasuringSequence = 10
+
+; CellularProgramming: Percentage limit (in decimals) express rate of successful under which is cell's instructions reseted (-1 = disabled)
+ResetCellPercentageLimit = 0.8
+
+; 8 neighbours (instead 4 neighbours) are used for calculate new cell's instructions (1 = enabled, 0 = disabled)
+ExtendedInstructionCalculation = 0
+
+[Analyse parameters]
+; Default number of steps during analyse instructions.
+DefaultStepInterval = 1
+
+; Default number of steps during analyse rules
+DefaultDamage = 0.01
+
+[Others]
+; Time interval for adding new value to evolution graph at evolution instruction (in ms).
+TimeIntervalEvolutionInstructions = 250
+
+; Time interval between two evolution steps during analyse instructions.
+TimeIntervalAnalyseInstructions = 1000
+
+; Number of values on graph at evolution instructions.
+EvolutionGraphValuesCount = 100

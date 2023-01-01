@@ -1,0 +1,39 @@
+*** INSTRUKCEMI RIZENY CELULARNI AUTOMAT ***
+
+Uloha: 	MAJORITY
+Okoli: 	MOORE
+Celularni programovani: 	FALSE
+Instrukce: 	174 176 157 129 149 177 147 173 
+
+*** PARAMETRY BEHU GA ***
+501	 # dokoncena generace behu vypoctu
+8	 # pocet instrukci v ramci chromozomu
+20052	 # pocet aplikaci operatoru krizeni od inicializace
+8890	 # pocet aplikaci operatoru mutace od inicializace
+50238	 # pocet ohodnoceni genomu od inicializace
+100	 # pocet vzorku v trenovaci mnozine
+4	 # rozmer mrizky vzorku z trenovaci mnoziny
+
+*** CELKOVE STATISTIKY ***
+949.216135s	 # doba behu vypoctu
+1360	 # nejhorsi fitness od inicializace
+1597	 # nejlepsi fitness od inicializace
+1550.17	 # prumerne fitness od inicializace
+
+*** STATISTIKY K POCATECNI POPULACI ***
+1360	 # nejhorsi fitness v pocatecni populaci
+1542	 # nejlepsi fitness v pocatecni populaci
+1451.96	 # prumerna fitness v pocatecni populaci
+
+*** STATISTIKY K AKTUALNI POPULACI ***
+1552	 # nejhorsi fitness v aktualni populaci
+1581	 # nejlepsi fitness v aktualni populaci
+1576.44	 # prumerna fitness v aktualni populaci
+
+*** MEZIVYSLEDKY ***
+0 	0.85 	0.907 	0.964
+100 	0.995 	0.995 	0.995
+200 	0.969 	0.994 	0.998
+300 	0.956 	0.965 	0.969
+400 	0.976 	0.976 	0.976
+500 	0.97 	0.985 	0.988
