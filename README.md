@@ -16,8 +16,7 @@ How to run it:
 =============
 ```Synopsis: ./automaton [-u usage]```
 
-`-u` Optional parameters specifying the program use, i.e. `1` = evolution of CA rules, `2` = analysis of CA rules,
-   `3` = CA rules designer, `4` = CA task designer
+`-u` Optional parameters specifying the program use, i.e. 1 = evolution of CA rules, 2 = analysis of CA rules, 3 = CA rules designer, 4 = CA task designer
 
 User interface:
 ===============
