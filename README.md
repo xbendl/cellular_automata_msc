@@ -1,6 +1,6 @@
 # cellular_automata_msc
-This repository contains a software created for my master thesis "Intruction-controlled cellular automata". Text of my thesis can be found at:
-https://www.fit.vut.cz/study/thesis/11121/.en?year=0&stud=bendl (czech language)
+This repository contains a software created for my master thesis "Intruction-controlled cellular automata". Further description in 
+[thesis fulltext (CZ)](https://www.fit.vut.cz/study/thesis/11121/.en?year=0&stud=bendl).
 
 ![GUI](https://github.com/xbendl/cellular_automata_msc/blob/main/fig.png)
 
